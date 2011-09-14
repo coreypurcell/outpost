@@ -83,7 +83,7 @@ module Outpost
     attr_reader :reports
 
     # Returns all the registered scouts.
-    attr_reader :scouts
+    attr_accessor :scouts
 
     # Returns all the registered notifiers.
     attr_reader :notifiers
