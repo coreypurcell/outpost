@@ -80,7 +80,7 @@ module Outpost
     attr_reader :last_status
 
     # Returns a list of {Report} containing the last results of the last check.
-    attr_reader :reports
+    attr_accessor :reports
 
     # Returns all the registered scouts.
     attr_accessor :scouts
@@ -168,6 +168,11 @@ module Outpost
     # @return [Array<String>] An array containing all report messages.
     def messages
       reports.map { |_, r| r.to_s }
+    end
+
+
+    def clear_reports
+      reports = {}
     end
 
     private
