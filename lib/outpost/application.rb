@@ -170,11 +170,6 @@ module Outpost
       reports.map { |_, r| r.to_s }
     end
 
-
-    def clear_reports
-      reports = {}
-    end
-
     private
 
     # :nodoc:
